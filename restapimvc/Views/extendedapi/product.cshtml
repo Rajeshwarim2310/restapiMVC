@@ -1,0 +1,56 @@
+﻿@*<script>
+    function getproductdetails()
+    {
+        var url = "https://restfulproject.azurewebsites.net/api/products";
+        fetch(url)
+        .then(dataformat => dataformat.json)
+        .then(products => {
+            alert("yes");
+        }
+        )
+        .catch(
+            err => {
+                alert("we got error");
+            }
+        )
+    }
+</script>
+<button class="btn btn-primary" onclick="getproductdetails()">show</button>*@
+
+<script>
+    function getProductsData()
+    {
+        var url = "https://restfulproject.azurewebsites.net/api/products";
+
+        fetch(url)
+        .then( dataformat => dataformat.json())
+        .then (products => {
+            //alert('We got the data');
+            //console.log(products);
+
+            for(var i=0;i<products.length;i++)
+            {
+                $("table").append("<tr>" +
+                        "<td>" + products[i].pId + "</td>" + 
+                        "<td>" + products[i].pName + "</td>" + 
+                        "<td>" + products[i].pCategory + "</td>" +
+                        "<td>" + products[i].pPrice + "</td>" + 
+                        "<td>" + products[i].pIsInStock + "</td>" +
+                         "<td> <button class='btn btn-success'> Add To Cart </button> </td>" +
+                        "<td> <button class='btn btn-warning'> Wish List </button> </td>" 
+
+
+                        +"</tr>")
+            }
+
+        })
+        .catch( err =>{
+            alert('We got the error');
+        })
+    }
+</script>
+
+<button class="btn btn-primary" onclick="getProductsData()"> Show Products</button>
+
+<table class="table table-bordered"></table>
+
