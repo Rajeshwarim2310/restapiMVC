@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4YTM31WZUdlmQN9Fb8psPQb8ZsGS828ZI/k5SD6ri6X+fsEayojp4vPJNhYG3Lqvebkh/BBW571L+hMKMUwtUA==",
+  "dgSpecHash": "Msaqp00HbSoNLheWi1ReR4KEY2aOwktN7+r6yNnfNzcYal8T0l9K+F8Im7TCH5+YWy/+hdtgHbg6ljtT0f6rsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Project\\restapimvc\\restapimvc\\restapimvc.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Project\\restapiMVC\\restapimvc\\restapimvc.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
